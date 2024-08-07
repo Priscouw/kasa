@@ -1,0 +1,50 @@
+@import "/src/styles/settings";
+
+header {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: $font-montserrat-500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & img {
+        width: 125px;
+
+        @media (width >=768px) {
+            width: 210px;
+        }
+    }
+}
+
+.navigation ul {
+    display: flex;
+    gap: 1rem;
+
+    @media (width >=425px) {
+        gap: 3rem;
+    }
+
+    & li {
+        list-style-type: none;
+        font-size: 12px;
+        color: $black-color;
+        text-transform: uppercase;
+
+        @media (width >=425px) {
+            font-size: 16px;
+        }
+
+
+        @media (width >=768px) {
+            text-transform: none;
+            font-size: 24px;
+        }
+    }
+}
+
+.nav-active {
+    text-decoration: underline;
+    color: black;
+}
