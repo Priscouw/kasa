@@ -1,0 +1,12 @@
+@import "./settings";
+
+// Imports des pages
+@import "../pages/Accueil/Accueil.scss";
+@import "../pages/Apropos/Apropos.scss";
+@import "../pages/Erreur/Erreur.scss";
+
+// Imports des components
+@import "../components/Header/Header.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/Banner/Banner.scss";
+@import "../components/Card/Card.scss";
