@@ -1,0 +1,12 @@
+.topbarContainer {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (width >=768px) {
+        gap: 2rem;
+    }
+}

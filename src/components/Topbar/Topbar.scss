@@ -1,0 +1,47 @@
+.topbar {
+    background-color: $main-color;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+
+
+    &-title {
+        color: $white-color;
+        font-size: 13px;
+
+        @media (width >=768px) {
+            font-size: 18px;
+        }
+
+        @media (width >=1024px) {
+            font-size: 24px;
+        }
+    }
+}
+
+
+.fa-angle-up {
+    color: $white-color;
+
+    @media (width >=768px) {
+        font-size: 24px;
+    }
+
+    @media (width >=1024px) {
+        font-size: 32px;
+    }
+}
+
+.topbar-content {
+    background-color: #F6F6F6;
+    font-family: $font-montserrat-400;
+    padding: 1rem 0.5rem;
+    font-size: 12px;
+
+    @media (width >=768px) {
+        font-size: 18px;
+    }
+
+}
