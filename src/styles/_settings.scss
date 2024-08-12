@@ -9,8 +9,14 @@
     src: url(../assets/fonts/Montserrat-Bold.ttf);
 }
 
+@font-face {
+    font-family: "montserrat-400";
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
 $font-montserrat-500: "montserrat-500", sans-serif;
 $font-montserrat-700: "montserrat-700", sans-serif;
+$font-montserrat-400: "montserrat-400", sans-serif;
 
 
 $main-color: #FF6060;
