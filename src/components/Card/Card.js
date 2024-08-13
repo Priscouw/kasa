@@ -1,13 +1,13 @@
 import React from "react";
 
-const Card = ({ cardImg }) => {
+const Card = ({ cardCover, locationTitle }) => {
   return (
-    <article className="card">
-      <img className="card-img" src={cardImg} alt="" />
-      <p className="card-text">
-        Titre de la <br /> location
-      </p>
-    </article>
+    <a href=".">
+      <article className="card">
+        <img className="card-img" src={cardCover} alt={locationTitle} />
+        <p className="card-text">{locationTitle}</p>
+      </article>
+    </a>
   );
 };
 

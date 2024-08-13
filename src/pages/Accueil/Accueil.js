@@ -3,8 +3,22 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
-
+import data from "../../data/logements.json";
 import imgBannerAccueil from "../../assets/img/bannerHomePage.png";
+
+function Cardlogement() {
+  return (
+    <>
+      {data.map((logement) => (
+        <Card
+          key={logement.id}
+          locationTitle={logement.title}
+          cardCover={logement.cover}
+        />
+      ))}
+    </>
+  );
+}
 
 const Accueil = () => {
   return (
@@ -15,9 +29,7 @@ const Accueil = () => {
         title="Chez vous, partout et ailleurs"
       />
       <div className="cardContainer">
-        <Card />
-        <Card />
-        <Card />
+        <Cardlogement />
       </div>
 
       <Footer />
