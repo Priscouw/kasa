@@ -1,23 +1,24 @@
-.tagnameContainer {
+.tagname {
     background-color: $main-color;
-    width: 84px;
-    padding: 0.3rem 0;
+    padding: 0.3rem 0.4rem;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    color: $white-color;
+    font-size: 10px;
 
-    @media (width >=1024px) {
-        width: 115px;
+
+    @media (width >=375px) {
+        padding: 0.4rem 0.5rem;
+
     }
 
-    .tagname-text {
-        color: $white-color;
-        font-size: 10px;
+    @media (width >=768px) {
+        padding: 0.4rem 1.5rem;
+        font-size: 12px;
+    }
 
-        @media (width >=1024px) {
-            font-size: 14px;
-        }
+    @media (width >=1024px) {
+        font-size: 14px;
     }
 
 }

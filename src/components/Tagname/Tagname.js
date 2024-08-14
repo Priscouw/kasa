@@ -1,10 +1,14 @@
 import React from "react";
 
-const Tagname = () => {
+const Tagname = ({ tagnames }) => {
   return (
-    <div className="tagnameContainer">
-      <p className="tagname-text">Cozy</p>
-    </div>
+    <>
+      {tagnames.map((tagname, index) => (
+        <p className="tagname" key={index}>
+          {tagname}
+        </p>
+      ))}
+    </>
   );
 };
 
