@@ -1,13 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = ({ cardCover, locationTitle }) => {
+const Card = ({ logements }) => {
   return (
-    <a href=".">
-      <article className="card">
-        <img className="card-img" src={cardCover} alt={locationTitle} />
-        <p className="card-text">{locationTitle}</p>
-      </article>
-    </a>
+    <>
+      {logements.map((logement) => (
+        <Link to={`/logement/${logement.id}`} key={logement.id}>
+          <article className="card">
+            <img
+              className="card-img"
+              src={logement.cover}
+              alt={logement.title}
+            />
+            <p className="card-text">{logement.title}</p>
+          </article>
+        </Link>
+      ))}
+    </>
   );
 };
 

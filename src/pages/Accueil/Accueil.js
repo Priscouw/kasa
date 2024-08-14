@@ -6,20 +6,6 @@ import Card from "../../components/Card/Card";
 import data from "../../data/logements.json";
 import imgBannerAccueil from "../../assets/img/bannerHomePage.png";
 
-function Cardlogement() {
-  return (
-    <>
-      {data.map((logement) => (
-        <Card
-          key={logement.id}
-          locationTitle={logement.title}
-          cardCover={logement.cover}
-        />
-      ))}
-    </>
-  );
-}
-
 const Accueil = () => {
   return (
     <div>
@@ -29,7 +15,7 @@ const Accueil = () => {
         title="Chez vous, partout et ailleurs"
       />
       <div className="cardContainer">
-        <Cardlogement />
+        <Card logements={data} />
       </div>
 
       <Footer />
