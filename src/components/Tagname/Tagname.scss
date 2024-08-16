@@ -1,6 +1,11 @@
+.tagnamesContainer {
+    display: flex;
+    gap: 0.7rem;
+}
+
 .tagname {
     background-color: $main-color;
-    padding: 0.3rem 0.4rem;
+    padding: 0.3rem 0.35rem;
     border-radius: 10px;
     text-align: center;
     color: $white-color;

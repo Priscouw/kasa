@@ -2,13 +2,13 @@ import React from "react";
 
 const Tagname = ({ tagnames }) => {
   return (
-    <>
+    <ul className="tagnamesContainer">
       {tagnames.map((tagname, index) => (
-        <p className="tagname" key={index}>
+        <li className="tagname" key={index}>
           {tagname}
-        </p>
+        </li>
       ))}
-    </>
+    </ul>
   );
 };
 
