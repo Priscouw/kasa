@@ -10,8 +10,12 @@ import imgBannerApropos from "../../assets/img/bannerAboutPage.png";
 function AproposElement() {
   return (
     <>
-      {aProposList.map(({ title, content }) => (
-        <Topbar key={title} topbarTitle={title} topbarContent={content} />
+      {aProposList.map((topbar) => (
+        <Topbar
+          key={topbar.title}
+          topbarTitle={topbar.title}
+          topbarContent={topbar.content}
+        />
       ))}
     </>
   );
