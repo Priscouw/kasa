@@ -3,8 +3,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0.7rem;
+    padding: 0.4rem 0.7rem;
     border-radius: 5px;
+
+    @media (width >=768px) {
+        padding: 0.9rem;
+    }
 
 
     &-title {
@@ -22,26 +26,33 @@
 }
 
 
-.fa-angle-up {
-    color: $white-color;
-
+.angle-up {
     @media (width >=768px) {
-        font-size: 24px;
+        margin-right: 0.8rem;
+        width: 24px;
+        transition: transform 200ms ease-in-out;
     }
+}
 
-    @media (width >=1024px) {
-        font-size: 32px;
-    }
+.rotateAngle-up {
+    transform: rotate(-180deg);
 }
 
 .topbar-content {
     background-color: #F6F6F6;
     font-family: $font-montserrat-400;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     font-size: 12px;
+    border-radius: 5px;
+    display: none;
+
 
     @media (width >=768px) {
         font-size: 18px;
     }
+}
+
+.showTopbar-content {
+    display: block;
 
 }

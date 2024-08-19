@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import arrowUp from "../../assets/icons/arrow-up.svg";
 
 const Topbar = ({ topbarTitle, topbarContent }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleArrowClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div>
       <div className="topbar">
         <h2 className="topbar-title">{topbarTitle}</h2>
-        <i className="fa-solid fa-angle-up"></i>
+        <img
+          src={arrowUp}
+          alt="arrow up"
+          className={`angle-up ${isOpen ? "rotateAngle-up" : ""}`}
+          onClick={handleArrowClick}
+        />
       </div>
-      <div className="topbar-content">
-        <p>{topbarContent}</p>
+      <div className={`topbar-content ${isOpen ? "showTopbar-content" : ""}`}>
+        {topbarContent}
       </div>
     </div>
   );
