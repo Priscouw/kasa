@@ -26,7 +26,7 @@ const Apropos = () => {
     <div>
       <Header />
       <Banner imageUrl={imgBannerApropos} title="" />
-      <div className="topbarContainer">
+      <div className="topbarAproposContainer">
         <AproposElement />
       </div>
 
