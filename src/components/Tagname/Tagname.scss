@@ -5,16 +5,15 @@
 
 .tagname {
     background-color: $main-color;
-    padding: 0.3rem 0.35rem;
+    padding: 0.4rem 0.5rem;
     border-radius: 10px;
     text-align: center;
     color: $white-color;
     font-size: 10px;
 
 
-    @media (width >=375px) {
-        padding: 0.4rem 0.5rem;
-
+    @media (width <=375px) {
+        padding: 0.3rem 0.35rem;
     }
 
     @media (width >=768px) {
