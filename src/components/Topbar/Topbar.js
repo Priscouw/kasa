@@ -9,9 +9,9 @@ const Topbar = ({ topbarTitle, topbarContent }) => {
   };
 
   return (
-    <div>
-      <div className="topbar">
-        <h2 className="topbar-title">{topbarTitle}</h2>
+    <div className="topbar">
+      <div className="topbar-header">
+        <h2 className="topbar-header-title">{topbarTitle}</h2>
         <img
           src={arrowUp}
           alt="arrow up"
