@@ -20,7 +20,7 @@ const Carrousel = ({ carrouselImg }) => {
           key={index}
           className={`caroussel-img ${index === currentIndex ? "active" : ""}`}
           src={img}
-          alt="carrousel"
+          alt={"image carrousel " + (index + 1)}
         />
       ))}
       {carrouselImg.length > 1 ? (
