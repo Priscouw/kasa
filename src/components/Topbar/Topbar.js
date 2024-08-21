@@ -14,7 +14,7 @@ const Topbar = ({ topbarTitle, topbarContent }) => {
         <h2 className="topbar-header-title">{topbarTitle}</h2>
         <img
           src={arrowUp}
-          alt="arrow up"
+          alt="flèche"
           className={`angle-up ${isOpen ? "rotateAngle-up" : ""}`}
           onClick={handleArrowClick}
         />

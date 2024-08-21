@@ -43,7 +43,9 @@ const Logement = () => {
                 <img
                   key={index}
                   src={index <= logement.rating ? redStar : greyStar}
-                  alt="star"
+                  alt={
+                    index <= logement.rating ? "étoile rempli" : "étoile vide"
+                  }
                 />
               ))}
             </div>
@@ -53,7 +55,7 @@ const Logement = () => {
               <img
                 className="host_information-img"
                 src={logement.host.picture}
-                alt={logement.host.name}
+                alt={"Photo de " + logement.host.name}
               />
             </div>
           </div>
