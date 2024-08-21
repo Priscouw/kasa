@@ -9,7 +9,6 @@
 
     @media (width >=768px) {
         height: 330px;
-
     }
 
     @media (width >=1024px) {
@@ -33,10 +32,7 @@
 
 .active {
     display: block;
-
 }
-
-
 
 /* Gestion des fleches du carrousel */
 .arrow {
@@ -50,12 +46,10 @@
 
 .arrow_left {
     left: 10px;
-
 }
 
 .arrow_right {
     right: 10px;
-
 }
 
 .currentSlide {
