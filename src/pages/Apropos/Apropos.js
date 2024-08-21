@@ -7,26 +7,18 @@ import { aProposList } from "../../data/aProposList";
 
 import imgBannerApropos from "../../assets/img/bannerAboutPage.png";
 
-function AproposElement() {
-  return (
-    <>
-      {aProposList.map((topbar) => (
-        <Topbar
-          key={topbar.title}
-          topbarTitle={topbar.title}
-          topbarContent={topbar.content}
-        />
-      ))}
-    </>
-  );
-}
-
 const Apropos = () => {
   return (
     <div>
       <Banner imageUrl={imgBannerApropos} title="" />
       <div className="topbarAproposContainer">
-        <AproposElement />
+        {aProposList.map((topbar) => (
+          <Topbar
+            key={topbar.title}
+            topbarTitle={topbar.title}
+            topbarContent={topbar.content}
+          />
+        ))}
       </div>
     </div>
   );
