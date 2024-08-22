@@ -17,14 +17,14 @@
 
     &-title {
         color: $white-color;
-        font-size: 13px;
+        font-size: 0.813rem;
 
         @media (width >=768px) {
-            font-size: 18px;
+            font-size: 1.125rem;
         }
 
         @media (width >=1024px) {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
     }
 }
@@ -48,11 +48,11 @@
     overflow: hidden;
     background-color: #F6F6F6;
     font-family: $font-montserrat-400;
-    font-size: 12px;
+    font-size: 0.75rem;
 
 
     @media (width >=768px) {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
