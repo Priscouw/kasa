@@ -38,6 +38,11 @@ $black-color : #000000;
     max-width: 1240px;
 }
 
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 
 * {
     padding: 0;

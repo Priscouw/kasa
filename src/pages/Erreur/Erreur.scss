@@ -1,8 +1,7 @@
 .error404 {
+    @include flex-column;
     color: $main-color;
     padding: 6.688rem 0;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     gap: 7.3rem;
 
@@ -45,9 +44,9 @@
     }
 
     &-link {
+        @include underline-navlink;
         font-size: 0.9rem;
         font-family: $font-montserrat-500;
-        @include underline-navlink;
 
         @media (width >=768px) {
             font-size: 1rem;

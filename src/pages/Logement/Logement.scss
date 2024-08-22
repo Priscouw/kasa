@@ -1,8 +1,7 @@
 .logement_infos_container {
     @include width-center-container;
+    @include flex-column;
     padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
 
     @media (width >=768px) {
@@ -12,8 +11,7 @@
 }
 
 .logement_infos {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 1rem;
 
     &-title {
@@ -104,8 +102,7 @@
 
 .containerLogementTopbar {
     @include width-center-container;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin-bottom: 1rem;
     gap: 1rem;
     padding: 1rem 0 2rem;

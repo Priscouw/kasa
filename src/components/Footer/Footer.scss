@@ -2,8 +2,7 @@ footer {
     background-color: $black-color;
 
     .footerContainer {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         text-align: center;
         gap: 1rem;
