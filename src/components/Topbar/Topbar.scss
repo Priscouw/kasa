@@ -31,10 +31,11 @@
 
 
 .angle-up {
+    transition: transform 200ms ease-in-out;
+
     @media (width >=768px) {
         margin-right: 0.8rem;
         width: 24px;
-        transition: transform 200ms ease-in-out;
     }
 }
 
@@ -59,15 +60,34 @@
 .showTopbar-content {
     padding: 1rem;
     animation: opentopbar 1000ms cubic-bezier(0.2, 0.22, 0.45, 0.94) forwards;
+}
 
+.notshowTopbar-content {
+    animation: closetopbar 200ms linear;
 }
 
 @keyframes opentopbar {
-    from {
+    0% {
         max-height: 0;
     }
 
-    to {
+    100% {
         max-height: 900px;
+    }
+}
+
+@keyframes closetopbar {
+    0% {
+        padding: 1rem;
+        max-height: 900px;
+    }
+
+    90% {
+        padding: 1rem;
+    }
+
+    100% {
+        max-height: 0;
+        padding: 0;
     }
 }
