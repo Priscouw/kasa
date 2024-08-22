@@ -19,11 +19,7 @@ const Topbar = ({ topbarTitle, topbarContent }) => {
           onClick={handleArrowClick}
         />
       </div>
-      <div
-        className={`topbar-content ${
-          isOpen ? "showTopbar-content" : "notshowTopbar-content"
-        }`}
-      >
+      <div className={`topbar-content ${isOpen ? "showTopbar-content" : ""}`}>
         {topbarContent}
       </div>
     </div>
