@@ -1,3 +1,5 @@
+# This project is archived because CRA is deprecate
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -8,7 +10,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Once inside the project folder, install the necessary dependencies. 
+Once inside the project folder, install the necessary dependencies.
 This command will install all the dependencies specified in the package.json file.
 
 ### `npm start`
